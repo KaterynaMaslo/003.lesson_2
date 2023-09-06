@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    <script>
+        let operation = prompt('Write the desired operation below (add, sub, mult, div):', "add");
+        let firstNum = parseFloat(prompt('Enter the first number:', 1));
+        let secondNum = parseFloat(prompt('Enter the second number:', 1));
+        switch (operation){
+            case "add": alert(firstNum + "+" + secondNum + "=" + ((firstNum)+(secondNum))); break;
+            case "sub": alert(firstNum + "-" + secondNum + "=" + ((firstNum)-(secondNum))); break;
+            case "mult": alert(firstNum + "*" + secondNum + "=" + ((firstNum)*(secondNum))); break;
+            case "div": alert(firstNum + "/" + secondNum + "=" + ((firstNum)/(secondNum))); break;
+            default: alert("Something went wrong");
+        }
+    </script>
+</body>
+</html>
